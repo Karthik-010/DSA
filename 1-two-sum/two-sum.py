@@ -3,11 +3,11 @@ class Solution:
         
         hashmap = {}
 
-        for i in range(len(nums)):
-            diff = target - nums[i]
+        for i,num in enumerate(nums):
+            diff = target - num
 
             if diff in hashmap:
                 return [hashmap[diff],i]
 
-            hashmap[nums[i]] = i
+            hashmap[num] = i
 
