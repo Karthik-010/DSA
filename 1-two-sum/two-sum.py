@@ -10,4 +10,6 @@ class Solution:
                 return [hashmap[diff],i]
 
             hashmap[num] = i
-
+        
+        return []
+             
